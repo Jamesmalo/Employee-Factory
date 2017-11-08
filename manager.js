@@ -7,11 +7,20 @@ const manager = function(){
     let baseSalary = random().discreteRangeIn(4,9)*10000;
 
     function payManager(){
-        let daily = 5/weekly;
-        let weekly = wage*hours;
-        let yearly = 52*weekly;
+        let yearly = baseSalary;
 
-        let payManager = [];
+        if(workers < 10){
+            yearly += numberWorkers*250;
+        }
+        else if(workers > 10){
+            yearly += numberWorkers*400
+        }
+
+        let weekly = 52/yearly;
+        let daily = 5/weekly;
+
+
+        let payManager = [daily,weekly,yearly];
         return payManager;
     }
 };
