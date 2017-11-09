@@ -23,6 +23,7 @@ const manager = function(){
         let payManager = [daily,weekly,yearly];
         return payManager;
     }
+    return{id, workers, baseSalary, payManager}
 };
 
 module.exports = manager;

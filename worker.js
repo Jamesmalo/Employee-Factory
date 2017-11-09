@@ -14,6 +14,7 @@ const worker = function(){
         let payWorker = [daily,weekly,yearly]
         return payWorker;
     }
+    return{id, wage, hours, pay}
 
 };
 

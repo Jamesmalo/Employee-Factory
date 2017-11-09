@@ -8,21 +8,22 @@ const employeeFactory = function(){
 
     function create(type){
         if(type == "worker"){
-            return 
+            return worker();
         }
         else if(type == "manager"){
-            return
+            return manager();
         }
         else if(type == "divisionHead"){
-            return
+            return divisionHead();
         }
         else if(type == "contractor"){
-            return
+            return contractor();
         }
         else{
             console.log("Please declare a type of employee");
         }
     }
+    return{create}
 
 };
 

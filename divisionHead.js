@@ -18,6 +18,7 @@ const divisionHead = function(){
         let payDHead = [daily,weekly,yearly];
         return payDHead;
     }
+    return{id, managers, workers, baseSalary, payDivisionHead}
 
 };
 
